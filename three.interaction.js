@@ -4,30 +4,13 @@
 	(factory((global.THREE = global.THREE || {}),global.THREE));
 }(this, (function (exports,three) { 'use strict';
 
-/**
- * get variable type
- * @param {*} val a variable which you want to get the type
- * @return {String} variable-type
- */
+
 function _rt(val) {
   return Object.prototype.toString.call(val);
 }
 
-/**
- * Utils tool box
- *
- * @namespace Utils
- */
 var Utils = {
-  /**
-   * determine whether it is a `Function`
-   *
-   * @static
-   * @method
-   * @memberof Utils
-   * @param {*} variable a variable which you want to determine
-   * @return {Boolean} type result
-   */
+
   isFunction: function () {
     var ks = _rt(function () {});
     return function (variable) {
